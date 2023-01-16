@@ -1,19 +1,38 @@
 
-.logo {
-    filter: drop-shadow(-5px 2px 3px #FFFFFF);
-    position: absolute;
-left: 30.28%;
-right: 30.21%;
-top: 5.18%;
-bottom: 80.54%;
+body {
+    background-color: #2D0737;
 }
-.navigation {
+header {
     position: absolute;
-width: 1318px;
-height: 60px;
-left: 60px;
-top: 409px;
+    width: 600px;
+    height: 400px;
+    left: 420px;
+    top: -86px;
+    max-width: 600px;
+}
+nav {
+    position: absolute;
+    width: 1318px;
+    height: 60px;
+    left: 61px;
+    top: 217px;
+    
+    background: #3C1E47;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
 
-background: #B47B55;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    position: fixed;
+}
+text {
+    font-family: 'Inter', sans-serif;
+
 }
