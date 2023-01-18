@@ -4,15 +4,14 @@ body {
 }
 header {
     position: relative;
-    width: 600px;
-    height: 400px;
+    max-width: 550px;
+    max-height: 350px;
     left: 420px;
     top: -86px;
-    max-width: 600px;
 }
 nav {
     position: relative;
-    width: 1318px;
+    max-width: 1318px;
     height: 60px;
     left: 61px;
     top: 217px;
