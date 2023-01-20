@@ -1,23 +1,30 @@
 
 body {
     background-color: #2D0737;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 header {
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 550px;
     max-height: 350px;
-    left: 420px;
     top: -86px;
 }
 nav {
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 1318px;
     height: 60px;
-    left: 61px;
     top: 217px;
     
     background: #3C1E47;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: auto;
+    margin-right: auto;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -31,19 +38,27 @@ nav {
     color: #FFFFFF;
     position: fixed;
 }
+section {
+    margin-left: auto;
+    margin-right: auto;
+}
 a{
     color: #FFFFFF;
     text-decoration: none;
-    margin: none;
 }
 ul{
-    list-style:none;
-    margin:0;
-    padding:0;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    align-items: center;
+    text-align: center;
     }
 li{
+    position: relative;
     display: inline;
     margin: 75px;
+    align-items: center;
 }
 h2 {
     font-family: 'Inter';
