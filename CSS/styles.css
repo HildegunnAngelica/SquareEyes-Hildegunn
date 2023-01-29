@@ -68,12 +68,16 @@ li{
     .fa-solid, .fas {
         display: none;
     }
+    nav a {
+        display: inline-block;
+    }
 }
 .container-indie {
     display: flex;
 }
 .indie-item {
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 h1 {
     font-family: 'Helvetica', sans-serif;
@@ -111,6 +115,7 @@ footer {
 img {
     max-width: 100%;
     border-radius: 20px;
+    align-items: center;
 }
 .footerlinks {
     margin-left: 5%;
