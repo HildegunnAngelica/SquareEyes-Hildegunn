@@ -89,7 +89,7 @@ div {
     display: block;
 
 }
-.indie-item1, {
+.indie-item1 {
     margin-left: 10px;
     margin-right: 10px;
     display: block;
@@ -110,6 +110,10 @@ h1 {
     text-align: center;
     font-size: 40px;
 }
+.H1-aboutus {
+    text-align: left;
+    margin-left: 40px;
+}
 h2 {
     font-family: 'Helvetica', sans-serif;
     font-size: 25px;
@@ -126,12 +130,22 @@ a {
 p{
     font-family: 'Helvetica', sans-serif;
     color: #FFFFFF;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 20px;
+    text-align: left;
+
 }
 img {
     max-width: 100%;
     border-radius: 20px;
     justify-content: center;
     align-items: center;
+}
+.p-footer {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }  
 footer {
     position: relative;
@@ -146,4 +160,5 @@ footer {
     margin-right: none;
     line-height: 29px;
     /* identical to box height */
+    text-align: center;
 }
