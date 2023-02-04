@@ -4,7 +4,10 @@ body {
     max-width: 100%;
 }
 main {
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    justify-content: center;
     max-width: 100%;
 }
 header {
@@ -80,8 +83,12 @@ div {
     font-style: bold;
     text-decoration: none;
 }
+section {
+    justify-content: center;
+}
 .container-indie {
     display: flex;
+    align-items: center;
 }
 .indie-item {
     max-width: 100%;
@@ -133,8 +140,10 @@ p{
     margin-left: 40px;
     margin-right: 40px;
     font-size: 20px;
+    text-align: center;
+}
+.about-contact {
     text-align: left;
-
 }
 .contact-form {
     align-items: center;
@@ -151,7 +160,7 @@ form {
     display: flex;
 }
 .contact-item {
-    display: inline-block;
+    ####
 }
 .contact-name {
     max-width: 100%;
@@ -171,24 +180,23 @@ img {
     border-radius: 20px;
     justify-content: center;
     align-items: center;
-}
-.p-footer {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}  
+} 
 footer {
+    padding: 20px;
     position: relative;
     max-width: 100%;
-
-    background: #3C1E47;
-    font-family: 'Inter';
+    
+    justify-content: center;
+    text-align: center;
+    font-family: 'helvetica', sans-serif;
     font-style: normal;
-    font-weight: 600;
-    font-size: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    justify-content: space-around;
+    margin-top: 10px;
     margin-left: none;
     margin-right: none;
-    line-height: 29px;
+
+    background: #3C1E47;
     /* identical to box height */
-    text-align: center;
 }
