@@ -136,6 +136,36 @@ p{
     text-align: left;
 
 }
+.contact-form {
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+form {
+    margin-left: 40px;
+    margin-right: 40px;
+    max-width: 100%;
+}
+.contact-container {
+    display: flex;
+}
+.contact-item {
+    display: inline-block;
+}
+.contact-name {
+    max-width: 100%;
+}
+.contact-e-mail {
+    max-width: 100px;
+}
+.contact-message {
+    max-width: 100%;
+}
+.contact-button {
+    background: #3C1E47;
+    color: #FFFFFF;
+}
 img {
     max-width: 100%;
     border-radius: 20px;
