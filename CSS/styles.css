@@ -72,10 +72,7 @@ nav a{
         margin: 25px;
         text-decoration: none;
     }
-    .hamburgermenu {
-        display: none;
-    }
-    .fa-solid fa-bars {
+    label {
         display: none;
     }
 }
