@@ -1,15 +1,58 @@
 
+/* Styles for across the website */
+
 body {
     background: linear-gradient(0deg, #2E0838 0%, #2E0838 19.4%, #2E0838 36.56%, #3D1F47 50.49%, #2E0838 65.38%, #2E0838 82.86%, #2E0838 100%);
     max-width: 100%;
-}
+    }
 main {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     justify-content: center;
     max-width: 100%;
-}
+    }
+div {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 15px;
+    font-style: bold;
+    text-decoration: none;
+    }
+section {
+    justify-content: center;
+    }
+h1 {
+    font-family: 'Helvetica', sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 40px;
+    }
+h2 {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+    color: #FFFFFF;
+    text-align: center;
+    }
+a {
+    color: #FFFFFF;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    }
+p{
+    font-family: 'Helvetica', sans-serif;
+    color: #FFFFFF;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 20px;
+    text-align: center;
+    }
+
+/* Header */
 header {
     max-width: 100%;
 }
@@ -18,20 +61,22 @@ header {
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
-}
+    }
+
+/* Navigation */
 nav, #menu-checkbox {
     display: none;
-}
+    }
 #menu-checkbox:checked ~ nav {
     display: inline;
-}
+    }
 .fa-solid, .fas {
     display: relative;
     top: 10%;
     color: #FFFFFF;
     font-size: 30px;
     padding-left: 30px;
-}
+    }
 nav a{
     color: #FFFFFF;
     font-family: 'Helvetica', sans-serif;
@@ -44,7 +89,7 @@ nav a{
     display: inline;
     margin: 15px;
     text-decoration: none;
-}
+    }
 .nav-ul {
     list-style: none;
     max-width: 100%;
@@ -54,7 +99,7 @@ nav a{
     padding: 10px;
     background: #3C1E47;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+    }
 @media screen and (min-width: 750px) {
     nav {
         display: inline;
@@ -75,118 +120,88 @@ nav a{
     label {
         display: none;
     }
-}
-div {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Helvetica', sans-serif;
-    font-size: 15px;
-    font-style: bold;
-    text-decoration: none;
-}
-section {
-    justify-content: center;
-}
+    }
+
 .container-indie {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-}
+    }
 .indie-item, .indie-item1, .indie-item2, .indie-item3 {
     max-width: 100%;
     margin: 10px;
     display: block;
-}
+    }
+
+/* Library */
 .container-genre {
     display: flex;
     align-items: center;
-}
+    }
 .genre-item {
     max-width: 100%;
     margin: 10px;
     display: flex;
     align-items: center;
-}
+    }
 .genre-item1, .genre-item2, .genre-item3 {
     max-width: 100%;
     margin: 10px;
     display: flex;
     align-items: center;
-}
+    }
 .genre-img {
     position: absolute;
-}
-h1 {
-    font-family: 'Helvetica', sans-serif;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 40px;
-}
+    }
+
+/* About us Page */
 .H1-aboutus {
     text-align: left;
     margin-left: 40px;
-}
-h2 {
-    font-family: 'Helvetica', sans-serif;
-    font-size: 25px;
-    font-weight: 200;
-    color: #FFFFFF;
-    text-align: center;
-}
-a {
-    color: #FFFFFF;
-    text-align: center;
-    align-items: center;
-    text-decoration: none;
-}
-p{
-    font-family: 'Helvetica', sans-serif;
-    color: #FFFFFF;
-    margin-left: 40px;
-    margin-right: 40px;
-    font-size: 20px;
-    text-align: center;
-}
+    }
+
+/* Contact Page */
 .about-contact {
     text-align: left;
-}
+    }
 .contact-form {
     align-items: center;
     margin-left: 40px;
     margin-right: 40px;
-
-}
+    }
 form {
     margin-left: 40px;
     margin-right: 40px;
-    max-width: 100%;
-}
+    max-width: 100%;  
+    }
 .contact-container {
     display: flex;
-}
+    background-color: #3D1F47;
+    }
 .contact-item {
-    ####
-}
+    display: inline;
+    }
 .contact-name {
     max-width: 100%;
-}
+    }
 .contact-e-mail {
     max-width: 100px;
-}
+    }
 .contact-message {
     max-width: 100%;
-}
+    }
 .contact-button {
     background: #3C1E47;
     color: #FFFFFF;
-}
+    }
 img {
     max-width: 100%;
     border-radius: 20px;
     justify-content: center;
     align-items: center;
-    
-} 
+    } 
+
+/* Footer */
 footer {
     padding: 20px;
     position: relative;
@@ -198,11 +213,10 @@ footer {
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
-    justify-content: space-around;
     margin-top: 10px;
     margin-left: none;
     margin-right: none;
 
     background: #3C1E47;
     /* identical to box height */
-}
+    }
