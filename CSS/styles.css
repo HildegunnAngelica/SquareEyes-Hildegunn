@@ -2,10 +2,10 @@
 /* Styles for across the website */
 
 body {
-    background: linear-gradient(0deg, #2E0838 0%, #2E0838 19.4%, #2E0838 36.56%, #3D1F47 50.49%, #2E0838 65.38%, #2E0838 82.86%, #2E0838 100%);
-    max-width: 100%;
+    background-color: #2E0838;
     }
 main {
+    position: flex;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -37,6 +37,10 @@ h2 {
     color: #FFFFFF;
     text-align: center;
     }
+h3 {
+    font-family: 'helvetica', sans-serif;
+    font-size: 15px;
+   }
 a {
     color: #FFFFFF;
     text-align: center;
@@ -49,8 +53,14 @@ p{
     margin-left: 40px;
     margin-right: 40px;
     font-size: 20px;
-    text-align: center;
     }
+img {
+    max-width: 100%;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    } 
+
 
 /* Header */
 header {
@@ -58,6 +68,7 @@ header {
     }
 .squareeyeslogo {
     display: flex;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
@@ -89,7 +100,15 @@ nav a{
     display: inline;
     margin: 15px;
     text-decoration: none;
+    transition-duration: .5s;
     }
+nav a:hover {
+    background-color: #2E0838;
+    color: #FFFFFF;
+    padding: 3px 1px 4px 1px;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
 .nav-ul {
     list-style: none;
     max-width: 100%;
@@ -120,12 +139,15 @@ nav a{
     label {
         display: none;
     }
+    a {
+        font-size: larger;
+    }
     }
 
 .container-indie {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
+    justify-content:center;
     }
 .indie-item, .indie-item1, .indie-item2, .indie-item3 {
     max-width: 100%;
@@ -150,20 +172,36 @@ nav a{
     display: flex;
     align-items: center;
     }
-.genre-img {
-    position: absolute;
+.library-button {
+    background: #3C1E47;
+    font-family: 'helvetica', sans-serif;
+    color: #FFFFFF;
+    border-style: none;
+    padding: 10px;
+    width: 100px;
+    max-width: 100%;
     }
-
 /* About us Page */
-.H1-aboutus {
+.about-container {
     text-align: left;
-    margin-left: 40px;
-    }
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
 
-/* Contact Page */
+}
+.h1-aboutus {
+    text-align: left;
+    margin-left: 135px;
+    margin-top: 50;
+    }
 .about-contact {
     text-align: left;
     }
+
+/* Contact Page */
+
 .contact-form {
     align-items: center;
     margin-left: 40px;
@@ -176,47 +214,72 @@ form {
     }
 .contact-container {
     display: flex;
-    background-color: #3D1F47;
+    flex-wrap: wrap;
+    border: #FFFFFF;
+    margin: 40px;
     }
 .contact-item {
     display: inline;
     }
 .contact-name {
     max-width: 100%;
+    width: 200px;
     }
 .contact-e-mail {
     max-width: 100px;
+    width: 200px;
     }
 .contact-message {
     max-width: 100%;
+    width: 1075px;
+    height: 269px;
     }
 .contact-button {
-    background: #3C1E47;
+    width: 256px;
+    height: 52px;
+    margin-top: 10px;
+    background:#3C1E47;
     color: #FFFFFF;
-    }
-img {
+    border-style: none;
+    border-radius: 10px;
     max-width: 100%;
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-    } 
+    font-size: 15px;
+    transition-duration: .2s;
+    }
+.contact-button:hover {
+    background-color: #3C1E47;
+    color: #FFFFFF;
+    outline-style: double;    
+    padding: 3px 1px 4px 1px;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+
+    }
+
+
+
+
+
 
 /* Footer */
 footer {
-    padding: 20px;
-    position: relative;
+    padding: 10px 10px 0px 10px;
+    position: fixed;
+    bottom: 0;
+    top: 1141px;
+    height: 142px;
     max-width: 100%;
-    
-    justify-content: center;
     text-align: center;
+    align-items: center;
     font-family: 'helvetica', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
-    margin-top: 10px;
+    width: 100%;
+    font-size: 10px;
+    margin-top: 40px;
     margin-left: none;
     margin-right: none;
 
     background: #3C1E47;
-    /* identical to box height */
+    opacity: 80%;
     }
