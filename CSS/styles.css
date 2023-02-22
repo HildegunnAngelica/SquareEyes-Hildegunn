@@ -1,11 +1,17 @@
 
 /* Styles for across the website */
 
+html, body {
+    min-height: 100%;
+}
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #2E0838;
+    background: linear-gradient(0deg, #2E0838 24%, #3D1F47 40%, #3D1F47 50%, #3D1F47 65%, #2E0838 83%, #000000 100%);
+    mix-blend-mode: normal;
+    box-shadow: -2px 0px 0px #FFFFFF;
     margin: 0%;
     max-width: 100%;
     }
@@ -13,7 +19,8 @@ main {
     margin-left: 40px;
     margin-right: 40px;
     max-width: 100%;
-    padding-bottom: 20%;
+    min-height: 1000px;
+    padding-bottom: 210px;
     }
 section {
     display: flex;
@@ -41,7 +48,6 @@ h3 {
    }
 a {
     color: #FFFFFF;
-    text-align: center;
     align-items: center;
     text-decoration: none;
     }
@@ -100,16 +106,18 @@ nav a{
     justify-content: space-between;
     align-items: center;
     display: inline;
+    border-radius: 10px;
     margin: 15px;
     text-decoration: none;
-    transition-duration: .5s;
+    transition-duration: .2s;
     }
 nav a:hover {
     background-color: #2E0838;
     color: #FFFFFF;
     padding: 3px 1px 4px 1px;
+    outline-style: double;
     border-radius: 10px;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 .nav-ul {
     list-style: none;
@@ -148,10 +156,17 @@ nav a:hover {
     }
     p {
         font-size: larger;
-        margin: 40px;
     }
     }
-
+    
+/* Home page */
+.h1-homepage {
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+    font-size: 30px;
+    font-family: 'Helvetica', sans-serif;
+}
 .container-indie {
     display: flex;
     align-items: center;
@@ -214,7 +229,7 @@ nav a:hover {
     height: 52px;
     margin-left: auto;
     margin-right: auto;
-    background:#3C1E47;
+    background:#44284f;
     border-radius: 10px;
     font-size: 15px;
     font-family: 'helvetica', sans-serif;
@@ -231,23 +246,7 @@ nav a:hover {
     outline-style: double;    
     padding: 3px 1px 4px 1px;
     border-radius: 10px;
-    transition: 0.2s ease-in-out;
-    }
-
-/* About us Page */
-.about-container {
-    display: flex;
-    text-align: left;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-    }
-.h1-aboutus {
-    text-align: left;
-    }
-.about-contact {
-    text-align: left;
+    transition: 0.1s ease-in-out;
     }
 
 @media screen and (min-width: 750px) {
@@ -255,37 +254,101 @@ nav a:hover {
         flex-wrap: nowrap;
     }
 }
-    
-/* Contact Page */
 
-form {
-    padding: 30px;
-}
-.contact-form {
+/* About us Page */
+.about-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-   }
-.contact-flex-container {
+    max-width: 100%;
+    padding-top: 30px;
+    }
+.about-item1 {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: left;
     }
-.contact-item  {
-    display: block;
+.about-item2 {
+    text-align: left;
     }
-.contact-message {
-    display: block;
-    justify-content: center;
+@media screen and (min-width: 750px) {
+    .about-container {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
     }
 
+    
+/* Contact Page */
+
+.contact {
+    padding-top: 30px;
+    max-width: 100%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-form {
+    position: relative;
+   }
+.contact-name-email {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+.contact-form-message {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 100%;
+}
+.contact-child1 {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+.contact-child2 {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+.contact-child3 {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+.contact-item1  {
+    }
+.contact-item2 {
+}
+.contact-message {
+    }
+.contact-text {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+}
 .contact-button {
+    display: flex;
+    justify-content: center;
     width: 256px;
     height: 52px;
-    margin-top: 10px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
-    background:#3C1E47;
+    background:#44284f;
     color: #FFFFFF;
     border-style: none;
     border-radius: 10px;
@@ -301,20 +364,52 @@ form {
     border-radius: 10px;
     transition: 0.2s ease-in-out;
     }
+.contact-action {
+    position: absolute;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    width: 700px;
+    height: 200px;
+    max-width: 100%;
+    background-color: #2E0838;
+    color: #FFFFFF;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+}
 
+@media screen and (min-width: 750px) {
+    .contact {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    form {
+        flex-wrap: wrap;
+    }
+    .contact-name-email {
+        flex-wrap: nowrap;
+    }
+    }
 /* Footer */
 footer {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    align-items: center;
-    height: 160px; 
+    display: block;
+    position: fixed;
+    width:100%;
+    bottom: 0;
+    padding-top: 20px;
+    height: 140px; 
     max-width: 100%;
     text-align: center;
     font-family: 'helvetica', sans-serif;
     font-style: normal;
     font-size: 10px;
     background: #3C1E47;
-    opacity: 80%;
+    opacity: 90%;
     padding-bottom: 40px;
     }

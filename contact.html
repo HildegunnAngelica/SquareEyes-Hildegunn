@@ -28,18 +28,26 @@
       </nav>
     </header>
     <main>
-     <h1 class="h1-aboutus" >Contact</h1>
-     <div>
-        <form class="contact-form" action="/Action page/contact-action.html">
-            <span class="contact-item" class="contact-text">Full Name</span>
-            <input class="contact-item" type="text" name="Full name">
-            <span class="contact-item" class="contact-text">E-mail</span>
-            <input class="contact-item" type="email" name="email">
-            <br>
-            <span class="contact-message">Enter your message</span>
+     <div class="contact">
+      <h1>Contact</h1>
+      <form class="contact-form" action="/Action page/contact-action.html">
+        <section class="contact-name-email">
+          <div class="contact-child1">
+            <span class="contact-item1" class="contact-text">Full Name</span>
+            <input class="contact-item1" type="text" name="Full name" >
+           </div>
+           <div class="contact-child2">
+            <span class="contact-item2" class="contact-text">E-mail</span>
+            <input class="contact-item2" type="email" name="email">
+          </div>
+        </section>
+        <section class="contact-form-message">
+          <div class="contact-child3">
+            <span class="contact-text">Enter your message</span>
             <input class="contact-message" type="text" name="Message">
-            <br>
-            <input class="contact-button" type="submit" value="Send Request">
+          </div>
+        </section>  
+         <input class="contact-button" type="submit" value="Send Request">
         </form>
      </div>
     </main>
