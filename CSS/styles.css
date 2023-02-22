@@ -39,8 +39,8 @@ h2 {
     text-shadow: #3C1E47 2px;
     font-display: ;
     color: #FFFFFF;
-    padding-top: 40px;
-    margin-bottom: 0%;
+    padding-top: 30px;
+    margin-bottom: 0;
     }
 h3 {
     font-family: 'helvetica', sans-serif;
@@ -166,6 +166,7 @@ nav a:hover {
     font-weight: lighter;
     font-size: 30px;
     font-family: 'Helvetica', sans-serif;
+    display: none;
 }
 .container-indie {
     display: flex;
@@ -204,6 +205,9 @@ nav a:hover {
 }    
 
 /* Library */
+.h1-library {
+    text-align: center;
+}
 .container-genre {
     display: flex;
     align-items: center;
@@ -365,23 +369,24 @@ form {
     transition: 0.2s ease-in-out;
     }
 .contact-action {
-    position: absolute;
     z-index: 2000;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     width: 700px;
-    height: 200px;
+    height: 400px;
     max-width: 100%;
     background-color: #2E0838;
     color: #FFFFFF;
-    padding: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
     border-radius: 10px;
+    border: solid #FFFFFF;
+}
+.action-contact {
+    filter: blur(10px);
 }
 
 @media screen and (min-width: 750px) {
@@ -390,7 +395,9 @@ form {
         margin-right: 100px;
     }
     form {
-        flex-wrap: wrap;
+     margin-left: 100px;
+     margin-right: 100px;
+     max-width: 100%;
     }
     .contact-name-email {
         flex-wrap: nowrap;
