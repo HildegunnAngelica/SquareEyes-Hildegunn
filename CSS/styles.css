@@ -37,10 +37,9 @@ h2 {
     font-weight: bold;
     text-align: center;
     text-shadow: #3C1E47 2px;
-    font-display: ;
     color: #FFFFFF;
     padding-top: 30px;
-    margin-bottom: 0;
+    padding-bottom: none;
     }
 h3 {
     font-family: 'helvetica', sans-serif;
@@ -50,12 +49,14 @@ a {
     color: #FFFFFF;
     align-items: center;
     text-decoration: none;
+    font-size: 16px;
     }
 p{
     font-family: 'Helvetica', sans-serif;
     color: #FFFFFF;
     font-size: 16px;
     max-width: 100%;
+    padding: none;
     }
 span {
     color: #FFFFFF;
@@ -68,6 +69,10 @@ img {
     justify-content: center;
     align-items: center;
     } 
+strong {
+    font-size: 16px;
+    font-family: 'helvetica', sans-serif;
+}
 
 
 /* Header */
@@ -394,7 +399,7 @@ form {
         margin-left: 100px;
         margin-right: 100px;
     }
-    form {
+    .contact-form {
      margin-left: 100px;
      margin-right: 100px;
      max-width: 100%;
@@ -403,6 +408,160 @@ form {
         flex-wrap: nowrap;
     }
     }
+
+/* Product information page */
+.product-information {
+    background-color: #2E0838;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    max-width: 100%;
+}
+.product-item1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    width: 465px;
+    max-width: 100%;
+    max-height: 100%;
+}
+.product-item2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 550px;
+    width: 465px;
+    max-width: 100%;
+}
+.product-img {
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+.source {
+    font-size: 10px;
+    text-align: center;
+}
+.h3-product {
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 25px;
+    margin: 0;
+}
+.product-info-p {
+    font-style: bold;
+    margin: 0;
+}
+.product-buttons {
+    display: flex;
+}
+.product-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    background:#44284f;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'helvetica', sans-serif;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    border-style: thin;
+    width: 60px;
+    max-width: 100%;
+    margin: 5px;
+}
+
+.checkout-button {
+    height: 52px;
+    background:#44284f;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'helvetica', sans-serif;
+    color: #FFFFFF;
+    border-style: none;
+    padding: 10px;
+    width: 200px;
+    max-width: 100%;
+    transition-duration: .1s;
+    margin: 5px;
+}
+.checkout-button:hover {
+    background-color: #3C1E47;
+    color: #FFFFFF;
+    outline-style: double;    
+    padding: 3px 1px 4px 1px;
+    border-radius: 10px;
+    transition: 0.1s ease-in-out;
+    }
+.product-info-checkout {
+    font-size: smaller;
+}
+.checkout-form {
+    width: 465px;
+    max-width: 100%;
+}
+.checkout-legend {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: Helvetica;
+    color: #FFFFFF;
+    font-style: bold;
+}
+
+@media screen and (min-width: 950px) {
+    
+    .product-information {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin-left: 100px;
+        margin-right: 100px;
+        flex-wrap: nowrap;
+    }
+    .product-buttons {
+        display: flex;
+        padding-top: 50px;
+    }
+    .product-img {
+        width: 328px;
+        height: 465px;
+        max-width: 100%;
+        height: auto;
+    }
+    .product-item1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 465px;
+        height: 550px;
+        max-width: 100%;
+        max-height: 100%;
+        margin: 20px;
+    }
+    .product-item2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 550px;
+        width: 550spx;
+        max-width: 100%;
+        margin: 20px;
+    }
+    .product-buttons {
+        display: flex;
+        padding-top: 100px;
+
+    }
+}
 /* Footer */
 footer {
     display: block;
@@ -410,7 +569,7 @@ footer {
     width:100%;
     bottom: 0;
     padding-top: 20px;
-    height: 140px; 
+    height: 50px; 
     max-width: 100%;
     text-align: center;
     font-family: 'helvetica', sans-serif;
