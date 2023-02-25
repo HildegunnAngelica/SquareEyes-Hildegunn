@@ -14,6 +14,7 @@ body {
     box-shadow: -2px 0px 0px #FFFFFF;
     margin: 0%;
     max-width: 100%;
+    font-family: 'Helvetica', sans-serif;
     }
 main {
     margin-left: 40px;
@@ -27,12 +28,10 @@ section {
     justify-content: center;
     }
 h1 {
-    font-family: 'Helvetica', sans-serif;
     color: #FFFFFF;
     font-size: 40px;
     }
 h2 {
-    font-family: 'Helvetica', sans-serif;
     font-size: 25px;
     font-weight: bold;
     text-align: center;
@@ -42,7 +41,6 @@ h2 {
     padding-bottom: none;
     }
 h3 {
-    font-family: 'helvetica', sans-serif;
     font-size: 15px;
    }
 a {
@@ -52,7 +50,6 @@ a {
     font-size: 16px;
     }
 p{
-    font-family: 'Helvetica', sans-serif;
     color: #FFFFFF;
     font-size: 16px;
     max-width: 100%;
@@ -60,7 +57,6 @@ p{
     }
 span {
     color: #FFFFFF;
-    font-family: 'helvetica', sans-serif;
     font-size: 15px;
     }
 img {
@@ -71,7 +67,6 @@ img {
     } 
 strong {
     font-size: 16px;
-    font-family: 'helvetica', sans-serif;
 }
 
 
@@ -84,6 +79,8 @@ header {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    width: 448px; 
+    height: 191px;
     max-width: 100%;
     }
 
@@ -103,7 +100,6 @@ nav, #menu-checkbox {
     }
 nav a{
     color: #FFFFFF;
-    font-family: 'Helvetica', sans-serif;
     font-style: bold;
     font-size: 16px;
     line-height: 19px;
@@ -151,7 +147,11 @@ nav a:hover {
         margin: 25px;
         text-decoration: none;
         font-size: 26px;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+    }
+    .nav-ul {
+        display: flex;
+        justify-content: center;
     }
     label:first-of-type {
         display: none;
@@ -170,7 +170,6 @@ nav a:hover {
     justify-content: center;
     font-weight: lighter;
     font-size: 30px;
-    font-family: 'Helvetica', sans-serif;
     display: none;
 }
 .container-indie {
@@ -179,12 +178,24 @@ nav a:hover {
     justify-content:center;
     flex-wrap: wrap;
     }
-.indie-item, .indie-item1, .indie-item2, .indie-item3 {
+.indie-item{
     max-width: 100%;
     margin: 10px;
     display: block;
     flex-wrap: wrap;
     }
+.indie-item1:hover {
+    transition: 0.1s ease;
+    transform: scale(1.05);
+}
+.indie-item2:hover {
+    transition: 0.1s ease;
+    transform: scale(1.05);
+} 
+.indie-item3:hover {
+    transition: 0.1s ease;
+    transform: scale(1.05);
+}
 .genre-div {
     display: block;
     align-items: center;
@@ -212,7 +223,7 @@ nav a:hover {
 /* Library */
 .h1-library {
     text-align: center;
-}
+    }
 .container-genre {
     display: flex;
     align-items: center;
@@ -223,13 +234,41 @@ nav a:hover {
     margin: 10px;
     display: flex;
     align-items: center;
+    border-radius: 20px;
+    transition-duration: .1s;
     }
-.genre-item1, .genre-item2, .genre-item3 {
-    max-width: 100%;
-    margin: 10px;
-    display: flex;
-    align-items: center;
+.genre-item:hover {
+    transition: 0.1s ease;
+    transform: scale(1.05);
     }
+.genre-item1 {
+    background-image: url(/Images/indie.png);
+    }
+.genre-item2 {
+    background-image: url(/Images/action.png);
+    }
+.genre-item3 {
+    background-image: url(/images/comedy.png);
+    }  
+.genre-item4 {
+    background-image: url(/images/horror.png);
+    }
+.genre-item5 {
+    background-image: url(/images/romance.png);
+    }
+.genre-item6 {
+    background-image: url(/images/sci-fi.png);
+    }
+.genre-item7 {
+    background-image: url(/images/Drama.png);
+    }
+.genre-item8 {
+    background-image: url(/images/Fantasy.png);
+    }
+.genre-item9 {
+    background-image: url(/images/Thriller.png);
+    }
+
 .library-button {
     display: flex;
     justify-content: center;
@@ -256,6 +295,7 @@ nav a:hover {
     padding: 3px 1px 4px 1px;
     border-radius: 10px;
     transition: 0.1s ease-in-out;
+    transform: scale(1.05);
     }
 
 @media screen and (min-width: 750px) {
@@ -314,7 +354,7 @@ form {
     flex-direction: row;
     max-width: 100%;
 }
-.contact-child1 {
+.contact-child1, .contact-child2, .contact-child3 {
     text-align: left;
     display: flex;
     justify-content: center;
@@ -322,28 +362,6 @@ form {
     width: 100%;
     padding: 10px;
 }
-.contact-child2 {
-    text-align: left;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    padding: 10px;
-}
-.contact-child3 {
-    text-align: left;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    padding: 10px;
-}
-.contact-item1  {
-    }
-.contact-item2 {
-}
-.contact-message {
-    }
 .contact-text {
     font-family: 'Helvetica', sans-serif;
     font-size: 16px;
@@ -396,8 +414,8 @@ form {
 
 @media screen and (min-width: 750px) {
     .contact {
-        margin-left: 100px;
-        margin-right: 100px;
+        margin: 0 auto;
+        max-width: 800px;
     }
     .contact-form {
      margin-left: 100px;
