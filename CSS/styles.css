@@ -321,8 +321,8 @@ nav a:hover {
     }
 @media screen and (min-width: 750px) {
     .about-container {
-        margin-left: 100px;
-        margin-right: 100px;
+        margin: 0 auto;
+        max-width: 800px;
     }
     }
 
