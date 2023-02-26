@@ -226,6 +226,7 @@ nav a:hover {
     }
 .container-genre {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     }
