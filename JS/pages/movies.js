@@ -6,12 +6,17 @@ export async function getMovies() {
     return movies;
 }
 
-export function renderMovies(movieData) {
-    const movieElement = document.createElement("div");
-    movieElement.href = "/JS/pages/movie.js";
+export function renderMovie(movieData) {
+     const movieElement = document.createElement("div");
+     movieElement.href = "/JS/pages/movie.js";
 
     movieElement.innerText = movieData.title;
     document.body.append(movieElement)
+
+}
+
+export function renderMovies(listOfMovies) {
+    listOfMovies.forEach(renderMovie)
 }
 
 export async function moviesPage() {
